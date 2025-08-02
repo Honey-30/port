@@ -6,9 +6,7 @@
   "scripts": {
     "start": "live-server --port=3000 --host=localhost --open=/",
     "dev": "live-server --port=3000 --host=localhost --open=/ --watch=.",
-    "build": "npm run minify-css && npm run minify-js",
-    "minify-css": "cleancss -o dist/styles.min.css styles.css",
-    "minify-js": "uglifyjs script.js -o dist/script.min.js",
+    "build": "echo 'No build needed for static site'",
     "deploy": "gh-pages -d .",
     "lint": "eslint script.js",
     "format": "prettier --write *.html *.css *.js",
