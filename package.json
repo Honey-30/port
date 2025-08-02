@@ -1,0 +1,60 @@
+{
+  "name": "honey-nandal-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Honey Nandal - AI/ML Engineer & Web Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --host=localhost --open=/",
+    "dev": "live-server --port=3000 --host=localhost --open=/ --watch=.",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o dist/styles.min.css styles.css",
+    "minify-js": "uglifyjs script.js -o dist/script.min.js",
+    "deploy": "gh-pages -d .",
+    "lint": "eslint script.js",
+    "format": "prettier --write *.html *.css *.js",
+    "validate": "html-validate index.html"
+  },
+  "keywords": [
+    "portfolio",
+    "ai",
+    "machine-learning",
+    "web-development",
+    "javascript",
+    "html",
+    "css",
+    "responsive"
+  ],
+  "author": {
+    "name": "Honey Nandal",
+    "email": "honey11a13@gmail.com",
+    "url": "https://github.com/Honey-30"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Honey-30/portfolio.git"
+  },
+  "homepage": "https://honey-30.github.io/portfolio",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "clean-css-cli": "^5.6.2",
+    "uglify-js": "^3.17.4",
+    "gh-pages": "^5.0.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "html-validate": "^8.7.4"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "particles.js": "^2.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
